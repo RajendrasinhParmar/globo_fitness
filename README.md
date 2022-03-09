@@ -2,6 +2,10 @@
 
 A new Flutter project for learning some basics about flutter
 
+## Runnig the project
+
+1. Add API key for the weather api in `http_helper.dart` file in place of `<YOUR_API_KEY>`.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
