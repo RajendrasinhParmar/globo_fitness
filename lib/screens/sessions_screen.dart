@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:globo_fitness/shared/menu_bottom.dart';
 import '../data/sp_helper.dart';
 import '../data/session.dart';
 
@@ -27,6 +28,7 @@ class _SessionsScreenState extends State<SessionsScreen> {
       appBar: AppBar(
         title: const Text('Your Training Session'),
       ),
+      bottomNavigationBar: const MenuBottom(),
       body: ListView(
         children: getContent(),
       ),
