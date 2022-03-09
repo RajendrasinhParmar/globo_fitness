@@ -1,11 +1,21 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:globo_fitness/screens/intro_screen.dart';
 
-void main() => runApp(
-      const Center(
-        child: Text(
-          'Hello, world!',
-          key: Key('title'),
-          textDirection: TextDirection.ltr,
-        ),
-      ),
+void main() {
+  runApp(const GlobeApp());
+}
+
+class GlobeApp extends StatelessWidget {
+  const GlobeApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.blue),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const IntroScreen(),
+      },
     );
+  }
+}
